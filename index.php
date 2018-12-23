@@ -10,3 +10,4 @@ require_once "Transmissions\TransmissionManual.php";
 
 $newcar = new Car();
 $newcar->move(1,1, 'rrrr');
+echo '1'.PHP.EOL;
