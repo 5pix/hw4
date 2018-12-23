@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: AnyCoder
- * Date: 30.11.2018
- * Time: 16:43
- */
-
 namespace AutoApp\Transmissions;
 
 class TransmissionManual
@@ -30,8 +23,6 @@ class TransmissionManual
                 return 'включили вторую передачу';
             }
         }
-
-
         return $this->front = $moveType;
 
     }

@@ -1,7 +1,8 @@
 <?php
 namespace AutoApp\Transmissions;
 
-use AutoApp\Transmissions\TransmissionAuto;
+//use AutoApp\Transmissions\TransmissionAuto;
+//use AutoApp\Transmissions\TransmissionManual;
 
 class Transmission
 {
@@ -20,7 +21,7 @@ class Transmission
         } elseif ($type === 'manual') {
             //в первую очередь выясняем куда двигаемся (вперед/назад)
             if ($moveSide === 'вперед') {
-            // сначала нужно включить 1-ю передачу, затем вулючить вторую передачу(по параметру скорость)
+                // сначала нужно включить 1-ю передачу, затем вулючить вторую передачу(по параметру скорость)
                 return 0;
             } elseif ($type === 'назад') {
                 return $transmissionManual->moveBackward('назад'); // class TransmissionManual, метод MoveBack
